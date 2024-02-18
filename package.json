@@ -1,12 +1,10 @@
 {
   "name": "altv-browser2server",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "main": "client/index.js",
-  "scripts": {},
-  "files": [
-    "dist/**/*"
-  ],
+  "scripts": { },
+  "files": ["dist/**/*"],
   "author": "Rusak_21",
   "repository": {
     "type": "git",
