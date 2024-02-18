@@ -1,11 +1,11 @@
 import * as altClient from "alt-client";
 
-export default {
+class BrowserToServer {
     /**
      * @param {altClient.WebView} view
-     * @param {string} [callName=browser.onServer] name of event need to call from browser
+     * @param {string} [callName=browser.emitServer] name of event need to call from browser
     */
-    initView(view, callName = "browser.onServer") {
+    initView(view, callName = "browser.emitServer") {
         view.on(callName, function() {
             const args = [...arguments];
             const eventName = args[0];
@@ -16,3 +16,5 @@ export default {
         });
     }
 }
+
+export default new BrowserToServer();
